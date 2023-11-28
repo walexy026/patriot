@@ -1,0 +1,185 @@
+.encloser{
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+.Card{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 30px;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px 50px 60px 50px;
+}
+
+@media screen and (max-width:1100px) {
+    .Card{
+        padding: 0px;
+        justify-content: center;
+    }
+    .card1{
+        margin: 15px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .Card{
+        padding: 10px 15px !important;
+    }
+    .card1{
+        height: 390px !important;
+    }
+}
+
+@media screen and (max-width:770px){
+    .Card{
+        padding: 20px 50px;
+    }
+    .card1{
+        height: 370px !important;
+    }
+    .cardImg1{
+        height: 180px !important;
+    }
+    .cardImg2{
+        height: 180px !important;
+    }
+    .cardImg3{
+        height: 180px !important;
+    }
+}
+
+.Card img{
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media screen and (max-width:600px){
+    .Card img{
+        width:100%;
+        margin: 0px;
+    }
+}
+
+.blah{
+    display: flex;
+}
+
+.card1{
+    height: 428px;
+    width: 24%;
+    box-shadow: 3px 3px 7px grey;
+    border-radius: 20px;
+    background-color: azure;
+    animation: grow 1300ms 0s 1 ease-out;
+}
+
+.cardImg1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVe4b9JiFsjoJjwORlYcjec_MuP9o9T2D9A&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.cardImg2{
+    background-image: url("https://www.i-believe.org/wp-content/uploads/2018/01/2-3-1170x655.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.cardImg3{
+    background-image: url("https://images.indianexpress.com/2020/04/coronavirus-related-murals017.jpg?w=350");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+.card1:hover,
+.card1:focus-within {
+  transform: translateY(-1.6rem);
+}
+
+
+
+@keyframes grow {
+    from{
+        height: 442px;
+        width: 25%;
+        border: 10px solid lightgrey;
+        border-radius: 23px;
+    }
+
+    to{
+        height: 428px;
+        width: 24%;
+        border: 5px solid lightgrey;
+        border-radius: 23px;
+
+    }
+}
+
+@keyframes growphone {
+    from{
+        height: 540px;
+        width: 88%;
+        border: 8px solid rgb(235, 234, 234);
+        border-radius: 23px;
+    }
+
+    to{
+        height: 530px;
+        width: 86%;
+        border: 4px solid rgb(235, 234, 234);
+        border-radius: 23px;
+
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .card1{
+        width: 86%;
+        margin-left: 4%;
+        height: 530px;
+        margin-right: 4%;
+        animation: growphone 1200ms 500ms 1 ease-in-out ;
+    }
+    .card1 hr{
+        display: none;
+    }
+}
+
+.Card:hover{
+    transition:linear;
+}
+
+.typo{
+    /* textAlign:"center", color:"darkOrange",   */
+    text-align: center;
+    color: darkorange;
+    font-weight: 700;
+    font-size: medium;
+    animation: appear 500ms ease-out 1300ms 1;
+}
+
+@keyframes appear {
+    0%{
+        font-size: xx-small;
+        font-weight: 100;
+    }
+    33%{
+        font-size: x-small;
+        font-weight: 300;
+    }
+    66%{
+        font-size: small;
+        font-weight: 500;
+    }
+    100%{
+        font-size: medium;
+        font-weight: 700;
+    }
+}

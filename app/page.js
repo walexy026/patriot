@@ -1,9 +1,5 @@
-import Image from "next/image";
+// import { homegraph_v1 } from "googleapis";
 
 export default function Home() {
-  return (
-    <main>
-      <h1>Let get started</h1>
-    </main>
-  );
+  return <h1>hello</h1>;
 }

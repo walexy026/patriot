@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -55,6 +57,16 @@ export default function Navbar() {
               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              aria-label="Contact Us"
+              title="Contact Us"
+              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+            >
+              Contact Us
             </a>
           </li>
         </ul>
@@ -158,6 +170,16 @@ export default function Navbar() {
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        aria-label="About Us"
+                        title="Contact Us"
+                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        Contact Us
                       </a>
                     </li>
                   </ul>
