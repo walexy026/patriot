@@ -1,73 +1,74 @@
-import React from "react";
+const people = [
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  {
+    name: "Leslie Alexander",
+    role: "Co-Founder / CEO",
+    imageUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  },
+  // More people...
+];
 
 export default function CoreTeam() {
-  const cc = [
-    {
-      avatar: "/team/sn.png",
-      name: "SN Tak",
-      position: "Faculty Coordinator",
-    },
-    {
-      avatar: "/team/pulkit.png",
-      name: "Pulkit Meena",
-      position: "Coordinator",
-    },
-    {
-      avatar: "/team/avinash.png",
-      name: "Avinash Lakhyani",
-      position: "Secretary",
-    },
-    {
-      avatar: "/team/vineet.png",
-      name: "Vineet Barwal",
-      position: "Joint Secretary",
-    },
-    {
-      avatar: "/team/madhur.png",
-      name: "Madhur Bansal",
-      position: "Executive Member",
-    },
-    {
-      avatar: "/team/ankit.png",
-      name: "Ankit Gupta",
-      position: "Executive Member",
-    },
-    {
-      avatar: "/team/arundhati.png",
-      name: "Arundhati Sharma",
-      position: "Creative",
-    },
-    {
-      avatar: "/team/aryan.png",
-      name: "Aryan Jagarwal",
-      position: "Editor",
-    },
-  ];
   return (
-    <div className="flex flex-col w-full items-center my-10 md:my-14 " id="team">
-      <p className="text-4xl font-bold">Core Team</p>
-      <p className="text-gray-500 text-xl w-full md:w-8/12 text-center my-4">
-        Teamwork is the fuel that allows common people to attain uncommon
-        results.
-      </p>
-      <div className="w-max-[90vw] w-full md:w-8/12 overflow-x-auto">
-        <div className="flex flex-row w-max flex-wrap">
-          {/* Card */}
-          {cc.map((cc, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center m-2 p-4 py-10 brightness-90 rounded-md w-56"
-            >
-              <img
-                src={cc.avatar}
-                alt=""
-                className="rounded-full w-20 h-20 md:w-28 md:h-28 object-cover ring ring-zinc-200"
-              />
-              <p className="font-medium mt-2 text-lg opacity-75">{cc.name}</p>
-              <p className="text-zinc-500">{cc.position}</p>
-            </div>
-          ))}
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Meet our leadership
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
+            elementum enim vitae ullamcorper suspendisse.
+          </p>
         </div>
+        <ul
+          role="list"
+          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2"
+        >
+          {people.map((person) => (
+            <li key={person.name}>
+              <div className="flex items-center gap-x-6">
+                <img
+                  className="h-16 w-16 rounded-full"
+                  src={person.imageUrl}
+                  alt=""
+                />
+                <div>
+                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                    {person.name}
+                  </h3>
+                  <p className="text-sm font-semibold leading-6 text-indigo-600">
+                    {person.role}
+                  </p>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
