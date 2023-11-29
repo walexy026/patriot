@@ -5,10 +5,11 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "#" },
+  { name: "About US", href: "#" },
+  { name: "Blog", href: "#" },
+  { name: "Gallery", href: "#" },
+  { name: "Our Mission", href: "#" },
 ];
 
 export default function Hero() {
@@ -16,7 +17,7 @@ export default function Hero() {
 
   return (
     <div className="bg-white">
-      <header className="fixed inset-x-0 top-10 z-50 background-red">
+      <header className="fixed bg-red-500 inset-x-0 top-0 z-50 ">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
