@@ -5,6 +5,7 @@ import Blog from "@/components/home/Blog";
 import CoreTeam from "@/components/home/CoreTeam";
 import Hero from "@/components/home/Hero";
 import Newsletter from "@/components/home/Newsletter";
+import Partners from "@/components/home/Partners";
 import Stats from "@/components/home/Stats";
 import Testimonials from "@/components/home/Testimonials";
 
@@ -18,6 +19,7 @@ export default function Home() {
 
       <Stats />
       <Blog />
+      <Partners />
       <Newsletter />
       <Testimonials />
     </>
